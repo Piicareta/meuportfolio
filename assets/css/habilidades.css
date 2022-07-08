@@ -70,7 +70,6 @@
 .skills {
     position: relative;
     background-color: rgb(255, 255, 220);
-    box-shadow: 15px 15px 15px rgb(50, 50, 50), inset 5px 5px 5px white;
     right: 5.9rem;
     width: 40rem;
     height: 32rem;
