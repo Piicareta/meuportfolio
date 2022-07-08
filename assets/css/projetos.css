@@ -1,0 +1,113 @@
+
+#projetos {
+    position: absolute;
+    top: 300vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+    flex-wrap: wrap;
+}
+
+#projetos img {
+    position: relative;
+    width: 18rem;
+    box-shadow: 15px 15px 15px rgb(20, 20, 20);
+    margin: 1.9rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.proj {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+}
+
+#projetos h1 {
+    position: absolute;
+    top: 4rem;
+    font-size: 4.5rem;
+    color: rgb(255, 255, 220);
+}
+
+button {
+    text-align: center;
+    background-color: rgb(255, 255, 220);
+    cursor: pointer;
+    position: absolute;
+    bottom: 4.5rem;
+    border: none;
+    font-family: "Fjalla One";
+    font-size: 2rem;
+    width: 24rem;
+    height: 3rem;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+button:hover {
+    letter-spacing: 0.6rem;
+    color: rgb(255, 255, 220);
+    background-color: rgb(10, 10, 10);
+}
+
+.overlay {
+    position: absolute;
+    box-shadow: inset 5px 5px 5px white;
+    top: 0;
+    border-radius: 20px;
+    margin: 1.9rem;
+    background-color: rgb(255, 255, 220);
+    width: 18rem;
+    height: 14.35rem;
+    transition: 500ms;
+}
+
+.overlay:hover {
+    opacity: 0;
+}
+
+.overlay h3 {
+    position: relative;
+    left: 0;
+    right: 0;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: "Fjalla One";
+}
+
+@media screen and (max-width:1250px) {
+
+    #projetos {
+        flex-direction: column;
+        height: 180vh;
+        top: 350vh;
+    }
+
+    #projetos h1 {
+    top: 3rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    #projetos {
+        width: 77vh;
+        top: 385vh;
+    }
+
+    #projetos img {
+        margin: 1rem;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    button {
+        bottom: 3rem;
+    }
+}

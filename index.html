@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+    <title>Portfólio | Pii</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="./assets/imgs/favicon.ico" type="image/x-icon">
+    <!-- Barra de Navegação -->
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <!-- Inicio -->
+    <link rel="stylesheet" href="./assets/css/inicio.css">
+    <!-- Sobre Min -->
+    <link rel="stylesheet" href="./assets/css/sobreMin.css">
+    <!-- Habilidades -->
+    <link rel="stylesheet" href="./assets/css/habilidades.css">
+    <!-- Projetos -->
+    <link rel="stylesheet" href="./assets/css/projetos.css">
+    <!-- Footer -->
+    <link rel="stylesheet" href="./assets/css/footer.css">
+</head>
+<body>
+    <div>
+        <input
+            id="close-menu"
+            class="close-menu"
+            type="checkbox"
+            aria-label="close-menu"
+            role="button"
+        />
+        <label
+            class="close-menu-label"
+            for="close-menu"
+            title="close menu"
+        ></label>
+        <div class="barra">
+            <p class="pii">{<b>Π</b>}</p>
+            <ul onclick="getElementById('close-menu').checked=false;">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobreMin">Sobre Min</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </div>
+    </div>
+    <section id="inicio">
+        <div class="logo" id="logo">
+            <img src="./assets/imgs/chaveE.png" class="chaveE" id="chaveE">
+            <img src="./assets/imgs/piiLogo.png" class="piiLogo" id="piiLogo">
+            <img src="./assets/imgs/chaveD.png" class="chaveD" id="chaveD">
+        </div>
+        <div class="ajustadorIni" id="ajustador">
+            <div class="heading">
+                <h3>Bem Vindo ao Meu</h3>
+                <h1>Portfólio</h1>
+            </div>
+            <div class="links">
+                <div class="githubLink" id="link1">
+                    <h4>GitHub</h4>
+                </div>
+                <div class="linkedinLink" id="link2">
+                    <h4>Linkedin</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobreMin">
+        <div class="about">
+            <h1>Sobre Min</h1>
+            <p class="p1">Meu nome é Petrus Zucarelli, tenho <span id="anos"></span> e sou 
+            um desenvolverdor autodidata, começei a me interessar por programação FrontEnd 
+            em 2022, tenho como objetivo me tornar um desenovlvedor FullStack.</p>
+            <p class="p2">Hoje já tenho algum conhecimento em tecnologias FrontEnd, 
+            futuramente pretendo dar um foco em desenvolvimento de software mobile e desktop. </p>
+        </div>
+        <div class="foto">
+            <img src="/assets/imgs/pii.jpg" alt="eu" class="eu">
+            <img src="/assets/imgs/matrix.gif" alt="matrix" class="matrix">
+        </div>
+    </section>
+    <section id="habilidades">
+        <div class="carrosel" id="carrosel">
+            <img src="./assets/imgs/css.svg" alt="CSS" class="css" id="css">
+            <img src="./assets/imgs/html.svg" alt="HTML" class="html" id="html">
+            <img src="./assets/imgs/javascript.jpg" alt="Javascript" class="js" id="js">
+            <img src="./assets/imgs/react.svg" alt="React" class="react" id="react">
+        </div>
+        <div class="skills" id="skills">
+            <h1 class="titulo">Habilidades</h1>
+            <p class="content" id="content"><span>- Passe o Mouse -</span></p>
+        </div>
+    </section>
+    <section id="projetos">
+        <h1>Projetos</h1>
+            <div class="proj" id="guessing">
+                <img src="./assets/imgs/guessing.jpg" alt="game">
+                <div class="overlay"><h3>Jogo<br>de<br>Adivinhação</h3></div>
+            </div>
+            <div class="proj" id="login">
+                <img src="./assets/imgs/login.jpg" alt="login">
+                <div class="overlay"><h3>Tela de<br>Login<br>responsivo</h3></div>
+            </div>
+            <div class="proj" id="gerador">
+                <img src="./assets/imgs/gerador.jpg" alt="gerador">
+                <div class="overlay"><h3>Gerador de<br>Numero/Senha</h3></div>
+            </div>
+        <button type="button" id="button">Repositório</button>
+    </section>
+    <footer>
+        <section class="footer">
+            <p>Feito por Petrus Zucarelli<br>email : pii.132@hotmail.com</p>
+        </section>
+    </footer>
+    <!-- Inicio -->
+    <script src="./assets/js/inicio.js"></script>
+    <!-- Sobre Min -->
+    <script src="./assets/js/sobremin.js"></script>
+    <!-- Habilidades -->
+    <script src="./assets/js/habilidades.js"></script>
+    <!-- Projetos -->
+    <script src="./assets/js/projetos.js"></script>
+</body>
+</html>

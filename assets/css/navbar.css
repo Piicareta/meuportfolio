@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.barra {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(10, 10, 10);
+    border-bottom: 1px solid rgb(255, 255, 220);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    float: right;
+}
+
+ul a {
+    float: right;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Fjalla One";
+    padding: 1.5em 4em;
+    color: rgb(255, 255, 220);
+    z-index: 1;
+}
+
+.pii {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 5px;
+    top: 10px;
+    left: 20px;
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 220);
+    font-family: "Fjalla One";
+}
+
+input {
+    visibility: hidden;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgb(255, 255, 220);
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+a:hover::before {
+    animation: anima 0.7s forwards;
+}
+
+a:hover {
+    color: rgb(10, 10, 10);
+    transition: 0.7s;
+}
+
+@keyframes anima {
+    25% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(0.8);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* --- Menu Mobile --- */
+
+@media screen and (max-width:950px) {
+
+    .barra {
+        display: flex;
+        top: -100vh;
+        align-items: center;
+        transition: ease 0.5s;
+    }
+    
+    ul {
+        display: inline;
+        text-align: center;
+        width: 100%;
+    }
+    
+    a {
+        width: 100%;
+        padding: 3em 0em;
+        font-size: 1.8rem;
+    }
+
+    .close-menu-label::after {
+        content:'≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: rgb(10, 10, 10);
+        color: rgb(255, 255, 220);
+        font-size: 3rem;
+        line-height:3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.barra {
+        height: 100%;
+        top: 0;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '✕';
+    }
+
+}
