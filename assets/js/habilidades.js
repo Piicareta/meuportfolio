@@ -12,7 +12,7 @@ css.onmouseover = function () {
     }, 150)
     css.style.width = '140px'
     content.innerHTML = '<h3>- CSS -</h3></p><br><p>É um mecanismo para adicionar estilo a um documento web.'
-    content.style.fontSize = '2.4rem'
+    content.style.fontSize = '3rem'
 }
 
 html.onmouseover = function () {
@@ -21,7 +21,7 @@ html.onmouseover = function () {
     }, 150)
     html.style.width = '140px'
     content.innerHTML = '<h3>- HTML -</h3><br><p>É uma linguagem de marcação utilizada na construção de páginas na Web.'
-    content.style.fontSize = '2.4rem'
+    content.style.fontSize = '3rem'
 }
 
 js.onmouseover = function () {
@@ -30,7 +30,7 @@ js.onmouseover = function () {
     }, 150)
     js.style.width = '140px'
     content.innerHTML = '<h3>- JavaScript -</h3><br><p>É uma linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web.'
-    content.style.fontSize = '2.4rem'
+    content.style.fontSize = '3rem'
 }
 
 react.onmouseover = function () {
@@ -39,7 +39,7 @@ react.onmouseover = function () {
     }, 150)
     react.style.width = '140px'
     content.innerHTML = '<h3>- React JS -</h3><br><p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.'
-    content.style.fontSize = '2.4rem'
+    content.style.fontSize = '3rem'
 }
 
 css.onclick = function () {

@@ -28,6 +28,7 @@ ul a {
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Fjalla One";
+    font-size: 1rem;
     padding: 1.5em 4em;
     color: rgb(255, 255, 220);
     z-index: 1;
