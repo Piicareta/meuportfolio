@@ -90,7 +90,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1320px) {
 
     #projetos {
         flex-direction: column;

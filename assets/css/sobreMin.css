@@ -58,7 +58,7 @@
 
 /* --- Inicio Responsivo Small/Mobile --- */
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1320px) {
     
     .eu, .matrix {
         display: none;

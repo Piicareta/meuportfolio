@@ -94,7 +94,7 @@
 
 /* --- Responsividade Small/Mobile --- */
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1320px) {
 
     .css, .html, .js, .react {
         animation: none;
