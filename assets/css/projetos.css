@@ -79,11 +79,23 @@ button:hover {
     font-family: "Fjalla One";
 }
 
+/* --- Inicio Responsivo Small/Mobile --- */
+
+@media screen and (max-width:1415px) {
+
+    #projetos {
+        flex-direction: column;
+        height: 190vh;
+        top: 300vh;
+    }
+}
+
+
 @media screen and (max-width:1250px) {
 
     #projetos {
         flex-direction: column;
-        height: 180vh;
+        height: 210vh;
         top: 350vh;
     }
 
@@ -95,8 +107,9 @@ button:hover {
 @media screen and (max-width:450px) {
 
     #projetos {
+        height: 220vh;
         width: 77vh;
-        top: 385vh;
+        top: 395vh;
     }
 
     #projetos img {

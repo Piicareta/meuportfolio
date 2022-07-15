@@ -14,11 +14,21 @@
     border-top: 1px solid rgb(255,255,220);
 }
 
+/* --- Inicio Responsivo Small/Mobile --- */
+
+@media screen and (max-width:1415px) {
+
+    .footer {
+        position: absolute;
+        top: 490vh;
+    }
+}
+
 @media screen and (max-width:1250px) {
 
     .footer {
         position: absolute;
-        top: 530vh;
+        top: 560vh;
     }
 }
 
@@ -26,6 +36,6 @@
 
     .footer {
         width: 77vh;
-        top: 565vh
+        top: 615vh
     }
 }

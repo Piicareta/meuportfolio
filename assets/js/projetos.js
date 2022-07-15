@@ -2,6 +2,7 @@
 let game = document.getElementById('guessing')
 let login = document.getElementById('login')
 let gerador = document.getElementById('gerador')
+let calculadora = document.getElementById('calculadora')
 let button = document.getElementById('button')
 
 game.onclick = function () {
@@ -14,6 +15,10 @@ login.onclick = function () {
 
 gerador.onclick = function () {
     window.open('https://piicareta.github.io/gerador.senha/')
+}
+
+calculadora.onclick = function () {
+    window.open('https://piicareta.github.io/calculadora.de.gastos/')
 }
 
 button.onclick = function () {
