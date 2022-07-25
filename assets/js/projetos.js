@@ -14,7 +14,7 @@ login.onclick = function () {
 }
 
 gerador.onclick = function () {
-    window.open('https://piicareta.github.io/gerador.senha/')
+    window.open('https://piicareta.github.io/mtg.quiz/')
 }
 
 calculadora.onclick = function () {
